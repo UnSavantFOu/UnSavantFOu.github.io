@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UnSavantFou</title>
+        <meta charset="utf-8">
+        <meta lang="eng">
+        <link rel="stylesheet" href="scheme.css">
+    </head>
+<body>
+
+    
+    <div class="right" id="right">
+        <div id="presentation">
+            <h1 id="title">Personal Presentation</h1>
+            <div id="text">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; I am a <label style="color: #2980b9;">17 years</label> old french back-end developer specialized in Node JS. For four years now I have been <label style="color: #2980b9;">self-learning</label> programming on forums (such as <u><a href="https://openclassrooms.com" target="_blank">OpenClassrooms</a></u> or <u><a href="https://www.developpez.com" target="_blank">Développez.com</a></u>), videos on YouTube or PrimeFX, or in official documentation. Now, I know <label style="color: #c0392b;">Python3</label>, <label style="color: #c0392b;">Java</label> and <label style="color: #c0392b;">Node JS</label> and I am currently learning <label style="color: #c0392b;">C</label> programming language and <label style="color: #c0392b;">PyTorch</label> environment.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; I have been creating for two years now <label style="color: #2980b9;">software for individuals</label> such as : a pool order calculator adaptive according to the numbers or a calculator of national sports classification from the pages of the results and the current rankings.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; Furthermore, I love mathematics and I am currently learning <label style="color: #2980b9;">bachelor courses</label> on the branch of analysis and arithmetic. It is possible that I publish here files that I have written about in this regard.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="left" id="left">
+        <div id="top">
+            <h1 id="title"><a href="https://github.com/UnSavantFOu" target="_blank">Projects</a></h1>
+        </div>
+
+        <div id="content">
+            <table>
+                <tr>
+                    <td><a href="https://github.com/UnSavantFOu/Classement-Maker" class="proj" target="_blank">Classement-Maker📋 </a></td>
+                    <td><label>(Java)</label></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/UnSavantFOu/LittleTrojan" class="proj" target="_blank">Little Trojan </a></td>
+                    <td><label>(Node JS)</label></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/UnSavantFOu/ISOLA" class="proj" target="_blank">ISOLA🕹 </a></td>
+                    <td><label>(Python)</label></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/UnSavantFOu/LittleGame1" class="proj" target="_blank">Little Tile Game🕹 </a></td>
+                    <td><label>(Java)</label></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="top" class="top2">
+            <h1 id="title">Maths</h1>
+        </div>
+
+        <div id="content">
+            <table>
+                <tr>
+                    <td><a href="./maths/recurrence_french.pdf" class="proj" target="_blank">Suites Récurrentes </a></td>
+                    <td><label>(🇫🇷)</label></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="languages">
+        <label><a href="./scheme_english.html">🇬🇧</a>&nbsp;<a href="./scheme_french.html">🇫🇷</a></label>
+    </div>
+
+    <script>
+        var opened = false;
+
+        function Move(){
+            if (opened){
+                opened = false;
+                closeNav();
+            }else{
+                opened = true;
+                openNav();
+            }
+        }
+
+        function openNav() {
+            document.getElementById("left").style.transform = "translate(100%,0)";
+            document.getElementById("right").style = "opacity: 30%";
+           //document.getElementById("left").style.width = "30%";
+        }
+        
+        function closeNav() {
+            document.getElementById("left").style.transform = "translate(-100%,0)";
+            document.getElementById("right").style = "opacity: 100%";
+          //document.getElementById("left").style.width = "0";
+        }
+    </script>
+
+    <span style="font-size:30px;cursor:pointer" onclick="Move()" id="leftButton">&#9776;</span>
+
+</body>
+</html>

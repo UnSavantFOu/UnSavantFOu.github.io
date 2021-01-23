@@ -1,0 +1,171 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #403d39;
+}
+
+.right{
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0%;
+    background-color: #403d39;
+}
+
+
+.left{
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: -30%;
+    background-color: #252422;
+    box-shadow: 10px 0px 40px #252422;
+    overflow-y: scroll;
+    transition: 1s;
+    overflow-x: hidden;
+
+}
+
+.left #top{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-bottom: solid #403d39 10px;
+    overflow-x: hidden;
+}
+
+.left #top h1{
+    margin: 0;
+    padding-top: 10%;
+    padding-left: 0;
+    font-family: "DealerPlate";
+    width: 100%;
+    color: white;
+}
+
+.left #content{
+    font-family: "SmallTypeWriting";
+}
+
+.left #content td, .left #content tr{
+    margin-top: 10%;
+}
+
+.left #content .proj:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.left #content table{
+    width: 100%;
+}
+
+.left #content td label{
+    color: #c0392b;
+}
+
+.left #content tr{
+    text-align: left;
+    width: 100%;
+}
+
+.left #content td{
+    padding-left: 5%;
+}
+
+.right #presentation{
+    position: fixed;
+    width: 70%;
+    height: 92%;
+    overflow-y: scroll;
+    background-color: #252422;
+    margin: 0;
+    left: 15%;
+    top: 5%;
+    border-radius: 5px;
+    box-shadow: 10px 0px 40px #252422;
+    text-align: center;
+}
+
+.right #presentation #title{
+    padding-top: 2%;
+    font-family: "DealerPlate";
+    border-bottom: solid #403d39 10px;
+    padding-bottom: 2%;
+}
+
+.right #presentation #text{
+    font-family: "SmallTypeWriting";
+    text-align: justify;
+    position: relative;
+    width: 90%;
+    height: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 110%;
+
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+.languages{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.top2{
+    padding-top: 10%;
+}
+
+@font-face {
+    font-family: "DealerPlate";
+    src: url("./assets/dealerplate\ california.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "SmallTypeWriting";
+    src: url("./assets/SmallTypeWriting.ttf") format("woff2");
+}
+
+#leftButton{
+    position: fixed;
+    color: white;
+    margin: 0;
+    left: 3%;
+    top: 3%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .left #title{
+        font-size: 90%;
+    }
+    .left td{
+        font-size: 60%;
+    }
+}
+
