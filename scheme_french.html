@@ -75,6 +75,34 @@
         <label><a href="./scheme_english.html">🇬🇧</a>&nbsp;<a href="./scheme_french.html">🇫🇷</a></label>
     </div>
 
+    <script>
+        var opened = false;
+
+        function Move(){
+            if (opened){
+                opened = false;
+                closeNav();
+            }else{
+                opened = true;
+                openNav();
+            }
+        }
+
+        function openNav() {
+            document.getElementById("left").style.transform = "translate(100%,0)";
+            document.getElementById("right").style = "opacity: 30%";
+           //document.getElementById("left").style.width = "30%";
+        }
+        
+        function closeNav() {
+            document.getElementById("left").style.transform = "translate(-100%,0)";
+            document.getElementById("right").style = "opacity: 100%";
+          //document.getElementById("left").style.width = "0";
+        }
+    </script>
+
+    <span style="font-size:30px;cursor:pointer" onclick="Move()" id="leftButton">&#9776;</span>
+
     
 </body>
 </html>
