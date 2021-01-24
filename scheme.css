@@ -159,6 +159,7 @@ ul{
     left: 3%;
     top: 3%;
     transition: 0.5s;
+    z-index: 10;
 }
 
 @media only screen and (max-width: 1000px) {
