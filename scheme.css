@@ -125,6 +125,7 @@ ul{
     font-size: 110%;
 
     text-justify: inter-character;
+    
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
