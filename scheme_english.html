@@ -34,7 +34,6 @@
 
         <div id="content">
 
-            <span style="font-size:30px;cursor:pointer" onclick="Move()" id="closeButton">&larr;</span>
 
             <table>
                 <tr>
@@ -87,17 +86,33 @@
             }
         }
 
+        
+
         function openNav() {
             document.getElementById("left").style.transform = "translate(100%,0)";
             document.getElementById("right").style = "opacity: 30%";
-           //document.getElementById("left").style.width = "30%";
+            //document.getElementById("left").style.width = "30%";
+            var div = document.getElementById("leftButton");
+            rotate(div,"-180");
         }
         
         function closeNav() {
             document.getElementById("left").style.transform = "translate(-100%,0)";
             document.getElementById("right").style = "opacity: 100%";
           //document.getElementById("left").style.width = "0";
+          var div = document.getElementById("leftButton");
+            rotate(div,"0");
         }
+
+        function rotate(div,deg){
+            div.style.webkitTransform = 'rotate('+deg+'deg)'; 
+            div.style.mozTransform    = 'rotate('+deg+'deg)'; 
+            div.style.msTransform     = 'rotate('+deg+'deg)'; 
+            div.style.oTransform      = 'rotate('+deg+'deg)'; 
+            div.style.transform       = 'rotate('+deg+'deg)';
+        }
+
+
     </script>
 
     <span style="font-size:30px;cursor:pointer" onclick="Move()" id="leftButton">&rarr;</span>
